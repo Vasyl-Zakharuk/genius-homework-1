@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty Zone</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -13,10 +14,10 @@
           <img src="./images/logo.svg" alt="Логотип Beauty Zone" />
         </a>
         <ul>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#why-us">Чому ми</a></li>
-          <li><a href="#procedures">Наші процедури</a></li>
-          <li><a href="#find">Контакти</a></li>
+          <li><a class="header-link" href="#about">Про нас</a></li>
+          <li><a class="header-link" href="#why-us">Чому ми</a></li>
+          <li><a class="header-link" href="#procedures">Наші процедури</a></li>
+          <li><a class="header-link" href="#find">Контакти</a></li>
         </ul>
         <ul>
           <li>
@@ -43,12 +44,14 @@
     <main>
       <section>
         <p>Косметологічна клініка</p>
-        <h1 lang="en">beauty zone</h1>
-        <button type="button">Замовити дзвінок</button>
+        <h1 class="hero-title">beauty zone</h1>
+        <button class="button" type="button">Замовити дзвінок</button>
         <p>Запишись та отримай безкоштовну консультацію нашого косметолога</p>
       </section>
       <section id="about">
-        <h2>Перевтілюйтесь в <span>beauty zone!</span></h2>
+        <h2 class="section-title">
+          Перевтілюйтесь в <span class="accent">beauty zone!</span>
+        </h2>
         <p>
           Наша косметологічна клініка пропонує вам професійні послуги з догляду
           за шкірою обличчя та тіла.
@@ -68,7 +71,9 @@
         />
       </section>
       <section id="why-us">
-        <h2>Чому люди <span>обирають нас</span></h2>
+        <h2 class="section-title">
+          Чому люди <span class="accent">обирають нас</span>
+        </h2>
         <ul>
           <li>
             <!-- icon -->
@@ -94,7 +99,9 @@
         </ul>
       </section>
       <section id="procedures">
-        <h2>Наші <span>процедури</span></h2>
+        <h2 class="section-title">
+          Наші <span class="accent">процедури</span>
+        </h2>
         <ul>
           <li>
             <article><h3>Маски для обличчя</h3></article>
@@ -107,8 +114,8 @@
           </li>
         </ul>
       </section>
-      <section id="find">
-        <h2>Як нас <span>знайти</span></h2>
+      <section id="find-us">
+        <h2 class="section-title">Як нас <span class="accent">знайти</span></h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2z0LLRg9C70LjRhtGPINCi0LDRgNCw0YHQsCDQqNC10LLRh9C10L3QutCwLCA1LCDQkdGA0L7QstCw0YDQuCwg0JrQuNGX0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMDc0MDA!5e0!3m2!1suk!2sua!4v1734100608949!5m2!1suk!2sua"
           width="605"
@@ -117,7 +124,9 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <button type="submit">Записатись безкоштовно</button>
+        <button class="button enroll" type="submit">
+          Записатись безкоштовно
+        </button>
       </section>
     </main>
     <footer>
