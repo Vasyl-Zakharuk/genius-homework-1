@@ -1,3 +1,32 @@
+/* Fonts */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('../fonts/roboto-v32-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-weight: 700;
+  src: url('../fonts/roboto-v32-cyrillic_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2');
+}
+
 :root {
   --beauty-landing-background: #fff;
   --beauty-light-1: #2b7fff;
@@ -10,6 +39,10 @@
 /* Base */
 body {
   color: var(--beauty-dark-1);
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 ul {
@@ -19,6 +52,8 @@ ul {
 /* Button */
 .button {
   color: var(--beauty-landing-background);
+  font-weight: 600;
+  font-size: 18px;
   background-color: var(--beauty-light-1);
   border: 2px solid var(--beauty-light-1);
   border-radius: 32px;
@@ -33,17 +68,72 @@ ul {
 /* Header */
 .header-link {
   color: var(--beauty-dark-1);
+  text-decoration: none;
 }
 
 .header-link:hover {
   color: var(--beauty-light-1);
+  font-weight: 700;
+}
+
+.header-link-social {
+  text-decoration: none;
 }
 
 /* Hero section */
 .hero-title {
   color: var(--beauty-light-1);
+  font-family: 'Play', 'sans-serif';
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 80%;
+}
+
+.hero-text {
+  font-size: 12px;
+  line-height: 150%;
 }
 
 span.accent {
   color: var(--beauty-light-1);
 }
+
+/* Section */
+.section-title {
+  font-family: 'Play', 'sans-serif';
+  font-weight: 700;
+  font-size: 64px;
+}
+
+/* About */
+.about-text {
+  font-size: 22px;
+  line-height: 172%;
+}
+
+.about-text span {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: var(--beauty-dark-1);
+}
+
+span.capitalize {
+  text-transform: capitalize;
+}
+
+/* why-us */
+.why-us-text {
+  line-height: 133%;
+  text-align: center;
+}
+
+/* Procedures */
+.procedures-title {
+  font-size: 22px;
+  line-height: 118%;
+  text-align: center;
+  color: var(--beauty-landing-background);
+}
+
+/* Footer */
